@@ -1,0 +1,28 @@
+
+
+
+
+
+.Logo{
+  
+}
+
+
+.Header{
+    display: flex;
+
+}
+
+.Navigatie{
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+
+.li{
+   
+}
+
+.Login{
+    text-align:right;
+}
