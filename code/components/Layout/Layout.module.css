@@ -2,6 +2,12 @@
 
 .Logo{
   margin: 20px;
+
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 
