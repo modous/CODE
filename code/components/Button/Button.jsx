@@ -1,9 +1,9 @@
-import { pink, blue  } from "./Button.module.css";
+import { pink, blue, black } from "./Button.module.css";
 
 //export default function Button({children, onClick})
 export default function Button(props) {
   return (
-    <button className={pink} onClick={props.onClick}>
+    <button className={black} onClick={props.onClick}>
       {props.children}
     </button>
   );

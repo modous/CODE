@@ -1,35 +1,22 @@
 import styles from "./Layout.module.css";
+import Link from "next/link";
+import DropDownMenu from "@/components/DropDownButton/DropDownMenu";
 
 export default function Layout({ children }) {
   return (
     <>
       <header className={styles.Header}>
-        <img
-          className={styles.Logo}
-          width="100"
-          height="50"
-          src="/CodeBlack.png"
-          alt="Code logo"
-        />
+        <Link href="/">
+          <img
+            className={styles.Logo}
+            width="100"
+            height="50"
+            src="/CodeBlack.png"
+            alt="Code logo"
+          />
+        </Link>
 
-        <nav>
-          <ul className={styles.Navigatie}>
-            <li className={styles.li}>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/">About</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
-            </li>
-            <li className={styles.Login}>
-            <a href="">Login</a>
-            </li>
-          </ul>
-
-        
-        </nav>
+        <DropDownMenu />
       </header>
       <main>{children}</main>
       <footer>
