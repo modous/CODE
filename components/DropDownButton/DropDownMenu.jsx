@@ -11,8 +11,8 @@ const DropDownMenu = () => {
   };
 
   return (
-    <div className={styles.surround_menu}>
-      <Button className="Menu" onClick={toggleMenu}>
+    <div className={`${styles.surround_menu} ${isMenuVisible ? '' : styles.hidden}`}>
+      <Button className={styles.Menu} onClick={toggleMenu}>
         Menu
       </Button>
 
