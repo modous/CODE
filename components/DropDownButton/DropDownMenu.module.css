@@ -12,11 +12,10 @@
 	/* Mobile nav */
 
 ul.Navigatie{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
-    scroll-snap-type: x mandatory;
-    overflow: auto;
+    /* justify-content: space-between; */
+  
 }
 
 li.nav_link{
@@ -31,7 +30,7 @@ li.nav_link{
 .nav_link {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
     position: relative;
     margin: 20px;
@@ -46,25 +45,14 @@ li.nav_link{
 		transition-duration: 0.5s;
         background-color: rgb(0, 0, 0);
         border-radius: 20px;
-        /* padding: 15px;
-        margin: 10px; */
         
-        border-style: solid;
 		box-shadow: 5px 8px 5px gray;
         border-color: black;
         
 	}
 
 
-	@media (max-width: 760px) {
-        .Menu{
-            display: block;
-            margin-left: auto;
-        }
-
-        button .Menu{
-            margin-left: auto;
-        }
+	@media (max-width: 845px) {
 
         ul.Navigatie{
             flex-direction: column;
@@ -72,15 +60,6 @@ li.nav_link{
             /* margin: 20px; */
         }
        
-        .nav_bar{   
-            min-width: 0px;
-        }
-
-        .nav_link{
-            padding-top: 10px;
-            margin: 10px;
-            
-        }
         .nav_link:hover{
 		transition-duration: 1s;
         transform: scale(1.1);
@@ -98,25 +77,19 @@ li.nav_link{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
-
-.Login{
-    display: flex;
-    justify-content: right;
-}
 
 .surround_menu{
-
     margin-left: auto;
     
 }
-
-
 
 .div{
     margin: 20px;
     padding: 10px;
 }
 
+.loginButton{
+   margin-left: 40px;
+}

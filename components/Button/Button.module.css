@@ -32,7 +32,7 @@
         border-color: black;
 }
 
-@media(max-width: 760px){
+@media(max-width: 845px){
     .black{
         display: block;
         margin-left: auto;

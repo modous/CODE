@@ -11,7 +11,11 @@ const DropDownMenu = () => {
   };
 
   return (
-    <div className={`${styles.surround_menu} ${isMenuVisible ? '' : styles.hidden}`}>
+    <div
+      className={`${styles.surround_menu} ${
+        isMenuVisible ? "" : styles.hidden
+      }`}
+    >
       <Button className={styles.Menu} onClick={toggleMenu}>
         Menu
       </Button>
@@ -19,36 +23,29 @@ const DropDownMenu = () => {
       {isMenuVisible && (
         <nav className={styles.nav_bar}>
           <ul className={styles.Navigatie}>
-            <li>
-              <Link className={styles.nav_link} href="/">
-                Home
+            <Link className={styles.nav_link} href="/">
+              Home
+            </Link>
+
+            <Link className={styles.nav_link} href="/new">
+              Nieuw
+            </Link>
+
+            <Link className={styles.nav_link} href="/about">
+              About
+            </Link>
+
+            <Link className={styles.nav_link} href="/contact">
+              Contact
+            </Link>
+            <li className={styles.loginButton}>
+              <Link className={styles.nav_link} href="/login">
+                Login
               </Link>
             </li>
-            <li>
-              <Link className={styles.nav_link} href="/new">
-                Nieuw
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.nav_link} href="/men">
-                Heren
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.nav_link} href="/women">
-                Dames
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.nav_link} href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.nav_link} href="/contact">
-                Contact
-              </Link>
-            </li>
+            <Link className={styles.nav_link} href="/register">
+              Register
+            </Link>
           </ul>
         </nav>
       )}
