@@ -1,18 +1,49 @@
 .container{
     background-color: bisque;
-  padding: 5em;
+    padding: 6em;
+
 }
 
 .how{
+    margin-bottom: 0px;
     color: darkgreen;
 }
 
 .telIcoon{
-    width: 50;
-    height: 20;
+    padding-left: 0px;
+    /* width: 50;
+    height: 20; */
+    
 }
 
 .li{
     list-style-type: none;
     margin-top: 30px;
+    padding-left: 0px;
+}
+
+.ul{
+    padding-left: 0px;
+}
+
+.textFoto{
+    /* margin: 100px; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text{
+    max-width: 500px;
+    padding-bottom: 50px;
+}
+
+.foto{
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.header{
+    margin-top: 0px;
+    font-size: 40px;
 }
