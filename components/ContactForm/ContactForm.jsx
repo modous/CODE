@@ -25,58 +25,39 @@ export default function Contact() {
 
   return (
     <div className={styles.container}>
+      <p className={styles.how}>How can we help you?</p>
       <h1>Contact Us</h1>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.formGroup}>
-          <label htmlFor="name" className={styles.formLabel}>
-            Naam:
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Naam"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-          />
-        </div>
+      <p>
+        We’re here to help and answer any questions you might have. We look
+        forward to hearing from you!
+      </p>
 
-        <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.formLabel}>
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label htmlFor="message" className={styles.formLabel}>
-            Bericht:
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="6"
-            placeholder="Typ hier je bericht"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            className={styles.formTextarea}
-          ></textarea>
-        </div>
-
-        <input type="submit" value="Submit" />
-      </form>
+      <ul>
+        <li className={styles.li}>
+          <img
+            className={styles.telIcoon}
+            src="https://sleeknotecom.wpenginepowered.com/wp-content/uploads/2020/10/Pin-2.svg"
+            alt="Adres icoontje"
+          />{" "}
+          Den Haag
+        </li>
+        <li className={styles.li}>
+          <img
+            className={styles.telIcoon}
+            src="https://sleeknotecom.wpenginepowered.com/wp-content/uploads/2020/10/Phone-2.svg"
+            alt="telefoon icoontje"
+          />{" "}
+          06 8212217
+        </li>
+        <li className={styles.li}>
+          <img
+            className={styles.telIcoon}
+            src="https://sleeknotecom.wpenginepowered.com/wp-content/uploads/2020/10/Mail.svg"
+            alt="Mail icoontje"
+          />{" "}
+          <a href="mailto:recipient@example.com">Code@gmail.com</a>
+        </li>
+      </ul>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+/* global.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  /* Optionally, you can set other styles for the body here */
+}
