@@ -29,7 +29,7 @@ export default function Contact() {
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.formLabel}>
-            Name:
+            Naam:
           </label>
           <input
             type="text"
@@ -61,12 +61,13 @@ export default function Contact() {
 
         <div className={styles.formGroup}>
           <label htmlFor="message" className={styles.formLabel}>
-            Message:
+            Bericht:
           </label>
           <textarea
             id="message"
             name="message"
             rows="6"
+            placeholder="Typ hier je bericht"
             value={formData.message}
             onChange={handleChange}
             required
