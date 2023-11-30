@@ -17,7 +17,7 @@ const DropDownMenu = () => {
       }`}
     >
       <Button className={styles.Menu} onClick={toggleMenu}>
-        Menu
+        {isMenuVisible ? "X" : "Menu"}
       </Button>
 
       {isMenuVisible && (
