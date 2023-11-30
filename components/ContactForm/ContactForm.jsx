@@ -34,6 +34,7 @@ export default function Contact() {
           <input
             type="text"
             id="name"
+            placeholder="Naam"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -49,6 +50,7 @@ export default function Contact() {
           <input
             type="email"
             id="email"
+            placeholder="Email"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -77,4 +79,3 @@ export default function Contact() {
     </div>
   );
 }
-    

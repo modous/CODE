@@ -8,8 +8,8 @@ export default function Contact() {
     <>
       <Layout>
         <ContactForm></ContactForm>
-        <Button onClick={() => alert("nee")}>bla</Button>
-        <Button onClick={() => alert("wat")}>niet klikken</Button>
+        {/* <Button onClick={() => alert("nee")}>bla</Button>
+        <Button onClick={() => alert("wat")}>niet klikken</Button> */}
       </Layout>
     </>
   );

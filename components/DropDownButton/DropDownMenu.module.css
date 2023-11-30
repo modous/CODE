@@ -33,9 +33,7 @@ li.nav_link{
     padding: 15px;
     display: inline-block;
     position: relative;
-    margin: 20px;
     margin-left: 20px;
-
 	}
 
 .nav_link:hover {
