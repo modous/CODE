@@ -13,6 +13,28 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+// GraphQL query
+const GET_PRODUCTS = gql`
+  query GetProducts {
+    products {
+      name
+      description
+      image
+      availability
+      slug
+    }
+  }
+`;
+
+// Function to fetch data
+export async function getProducts() {
+  const { data } = await client.query({
+    query: GET_PRODUCTS,
+  });
+  return data.products;
+}
+
+
 console.log(client);
 
 export default function Home() {
